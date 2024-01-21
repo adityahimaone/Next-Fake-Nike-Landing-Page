@@ -22,7 +22,7 @@ const Header = () => {
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="font-montserrat text-slate-gray text-lg leading-normal"
+                className="font-montserrat text-lg leading-normal text-slate-gray"
               >
                 {link.label}
               </Link>

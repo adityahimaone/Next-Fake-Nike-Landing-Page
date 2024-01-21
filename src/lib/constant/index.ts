@@ -20,6 +20,7 @@ import {
   thumbnailShoe2,
   thumbnailShoe3,
 } from '../../../public/assets/images';
+import type { IShoes } from '../types';
 
 export const navLinks = [
   { href: '#home', label: 'Home' },
@@ -28,7 +29,7 @@ export const navLinks = [
   { href: '#contact-us', label: 'Contact Us' },
 ];
 
-export const shoes = [
+export const shoes: IShoes[] = [
   {
     thumbnail: thumbnailShoe1,
     bigShoe: bigShoe1,

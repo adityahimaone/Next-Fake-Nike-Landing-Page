@@ -1,19 +1,26 @@
 import Image from 'next/image';
 
+import { cn } from '@/lib/styles/utils';
+
 type Props = {
   label: string;
   iconUrl?: string;
   onClick?: () => void;
+  variant?: 'primary' | 'secondary';
 };
 
-const Button = ({ label, iconUrl, onClick }: Props) => {
+const Button = ({ label, iconUrl, onClick, variant = 'primary' }: Props) => {
+  const buttonStyles = cn(
+    'flex items-center justify-center gap-2 rounded-full border text-lg leading-none px-7 py-4',
+    {
+      'bg-coral-red text-white': variant === 'primary',
+      'bg-white border-slate-gray text-slate-gray': variant === 'secondary',
+    }
+  );
+
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="flex items-center justify-center gap-2 rounded-full border bg-coral-red px-7 py-4 text-lg leading-none text-white"
-    >
-      <span className="font-montserrat text-lg font-bold">{label}</span>
+    <button type="button" onClick={onClick} className={buttonStyles}>
+      <span className="font-montserrat text-lg font-semibold">{label}</span>
       {iconUrl && (
         <Image
           src={iconUrl}

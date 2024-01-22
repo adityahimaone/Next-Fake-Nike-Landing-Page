@@ -15,7 +15,7 @@ const Hero = () => {
   );
 
   return (
-    <section id="home" className="xl:padding-l padding-b">
+    <section id="home" className="xl:padding-l wide:padding-r padding-b">
       <div className="max-container flex min-h-screen w-full flex-col justify-center gap-10 xl:flex-row">
         <div className="max-xl:padding-x relative flex w-full flex-col items-start justify-center pt-28 xl:w-2/5">
           <p className="font-montserrat text-xl text-coral-red">
@@ -47,7 +47,7 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <div className="relative flex flex-1 items-center justify-center bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen">
+        <div className="relative flex flex-1 items-center justify-center bg-primary bg-hero rounded-b-lg bg-cover bg-center max-xl:py-40 xl:min-h-screen">
           <Image
             src={bigShoeImg}
             width={610}

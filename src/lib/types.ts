@@ -1,6 +1,6 @@
 import type { StaticImageData } from 'next/image';
 
 export interface IShoes {
-  thumbnail: string;
+  thumbnail: any;
   bigShoe: string | StaticImageData;
 }

@@ -21,7 +21,7 @@ const Hero = () => {
           <p className="font-montserrat text-xl text-coral-red">
             Our Summer Collection
           </p>
-          <h1 className="max-sm:text[72px] mt-10 font-palanquin text-8xl font-bold max-sm:leading-[82]">
+          <h1 className="mt-10 font-palanquin text-8xl font-bold max-sm:text-[72px] max-sm:leading-[82px]">
             <span className="relative z-10 pr-10 xl:whitespace-nowrap xl:bg-white">
               The New Arrival
             </span>
@@ -47,7 +47,7 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <div className="relative flex flex-1 items-center justify-center bg-primary bg-hero rounded-b-lg bg-cover bg-center max-xl:py-40 xl:min-h-screen">
+        <div className="relative flex flex-1 items-center justify-center rounded-b-lg bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen">
           <Image
             src={bigShoeImg}
             width={610}
